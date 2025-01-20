@@ -1,0 +1,208 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale=1">
+<title>About Us</title>
+<link rel="icon" type="image/x-icon" href="l.jpg">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="collection.css">
+</head>
+
+<body>
+	<body style="background-color: #E6E6FA;">
+<!-- header start -->
+<header class ="header">
+<!-- logo-->
+<a href="index.html" class ="logo">
+<img src="l.jpg">
+</a>
+
+<!-- nav bar start -->
+<nav class="navbar">
+<input type="checkbox" id="check">
+<label for="check" class= "check-btn">
+<i class="fas fa-bars"></i>
+</label>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a class= "active" href="Collection.html">Menu</a></li>
+<li><a href="AAboutus.html">About Us</a><li>
+</ul>
+<!-- <div id="menu-btn"class="fas fa-bars"></div> -->
+</nav>
+<!--nav bar end-->
+
+<!-- search start-->
+<div class="search-form">
+<input type= "search" name="search-box" placeholder="Find your new collection here">
+</div>
+<!-- search end -->
+
+
+<!-- hyperlink with icons (search, cart, profile, menu button) -->
+<div class ="icons">
+<div class="cart-container" onmouseover="showCartForm()" onmouseout="hideCartForm()">
+<a href="4-cart.html">
+<div class ="fas fa-shopping-cart" id="cartButton"></div>
+</a>
+<div class="cart-form" id= "cartForm">
+<form>
+<div id="cartItems"></div>
+</form>
+</div>
+</div>
+<!-- hyperlink with icons (search, cart, profile, menu button)-->
+</header>
+<!-- header end -->
+
+<!---Menu Section-->
+<section class= "menu" id="menu">
+
+
+
+<h3 class="heading-description">Luxe Perfume</h3>
+
+
+
+<div class="menu">
+<div class="container menu-section">
+
+<!-- product 1 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src= "P1.JPG" alt="Coquette Shine">
+</div>
+<div class="menu-content">
+<h3>Coquette Shine</h3>
+<p>A sparkling blend of bergamot, jasmine, and vanilla musk, radiating playful charm and timeless elegance.</p>
+<div onclick="addtocart('Coquette Shine (Piece)','P250.00', 'Products/No BG/frappe_mocha.png', 'item1-l'); return false;">
+<button id="iteml-1">Coquette Shine <span>P250.00</span></button> <l-- Piece->
+</div>
+</div>
+</div>
+
+<!-- product 2 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="P2.jpg" alt="Senorita by Al Halal">
+</div>
+<div class="menu-content">
+<h3>Senorita by Al Halal</h3>
+<p>A vibrant mix of sweet red berries, lush jasmine, and soft amber, exuding bold elegance and irresistible charm.</p>
+<div onclick="addtocart('Senorita by Al Halal (Piece)', 'P250.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item2-l'); return false;">
+<button id="item2-1">Senorita by Al Halal <span>P250.00</span></button> <l-- Piece ->
+</div>
+</div>
+</div>
+
+<!-- product 3 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="P3.jpg" alt="Hello Chica">
+</div>
+<div class="menu-content">
+<h3>Hello Chica</h3>
+<p>A lively fusion of zesty citrus, fresh florals, and warm musk, radiating youthful energy and carefree charm.</p>
+<div onclick="addtocart('Hello Chica  (Piece)', 'P300.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item3-l'); return false;">
+<button id="item3-1">Hello Chica <span>P300.00</span></button> <l-- Piece->
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="container menu-section">
+</div>
+</div>
+</div>
+
+<h3 class="heading-description">Luxe Heels Shoes</h3>
+
+<div class="container menu-section">
+
+<!-⁃ product 1 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="Q1.jpg" alt="Snowlace Couture">
+</div>
+<div class="menu-content">
+<h3>Snowlace Couture</h3>
+<p>A heels feature delicate lace details in an all-white design, blending elegance with coquette charm. With a sleek stiletto, they offer timeless sophistication and enchanting allure.</p>
+<div onclick="addtocart('Snowlace Couture  (Piece)', 'P95.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item1-l'); return false;">
+<button id="item5-l">Snowlace Couture <span>P500.00</span></button> <l-- Piece ->
+</div>
+</div>
+</div>
+
+<!-⁃ product 2 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="Q2.jpg" alt="Crystal Enchanment">
+</div>
+<div class="menu-content">
+<h3>Crystal Enchanment</h3>
+<p> A heels in ribbon pink exude a soft, dreamy elegance. Featuring a sparkling crystal embellishment and a graceful pink ribbon accent, these heels add a touch of enchantment to any look. </p>
+<div onclick="addtocart('Crysal Enchanment(Piece)', 'P400.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item2-l'); return false;">
+<button id="item2-1">Crystal Enchanment <span>P400.00</span></button> <l-- Piece ->
+</div>
+</div>
+</div>
+
+
+<!-⁃ product 3 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="Q3.jpg" height="300" alt="Pearl Seduction">
+</div>
+<div class="menu-content">
+<h3>Pearl Seduction</h3>
+<p>A heels combine classic sophistication with irresistible allure. Adorned with lustrous pearl details, these heels in soft white create a captivating, feminine look.</p>
+<div onclick="addtocart('>Pearl Seduction(Piece)', 'P500.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item3-l'); return false;">
+<button id="item3-1">Pearl Seduction <span>P500.00</span></button> <l-- Piece ->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section End -->
+
+
+<!-- footer start -->
+<section class="footer">
+
+
+<div class="container">
+<div class="footer-box-1">
+<h3> Location </h3>
+<div class="footer-loc">
+<a href="https://www.google.com/maps/dir//College+of+Industrial+Technology,+660.+TUP,+Ermita,+Manila,+1000/@14.5873793,120.9024456,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3397cb93cd451575:0x6247d293ffefede0!2m2!1d120.9848474!2d14.5873937?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target=_blank>College of Industrial Technology, 660 Ermita, Manila, 1000</a>
+</div>
+</div>
+<div class="footer-box">
+<h3>Newsletter</h3>
+<p>Stay update with our latest</p>
+<form>
+<input type="email" name="email" placeholder="name@gmail.com">
+<button type="submit"><i class="fa-solid fa-right-long"></i></button>
+</form>
+</div>
+
+
+<div class="footer-box">
+<h3>Contact Us</h3>
+<p>Connect With Us On:</p>
+<div class="icons">
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+</div>
+
+</div>
+</div>
+</section>
+<!-- footer end -->
+<script src="2-menu.js"></script>
+</body>
+</html>
